@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "tailwindcss/base";
+// @import "tailwindcss/components";
+// @import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Baumans&family=Be+Vietnam+Pro:wght@400;700&display=swap");
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.font-title {
+  font-family: "Archivo", sans-serif;
+}
+.dashed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  min-height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dashed-container span {
+  position: absolute;
+  width: calc(100% - 0.25rem);
+  height: calc(100% - 0.25rem);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashed-container::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  background-image: conic-gradient(
+    transparent 0deg 15deg,
+    #5eead4 15deg 180deg,
+    transparent 180deg 195deg,
+    #5eead4 195deg 360deg
+  );
+  rotate: 70deg;
+  animation: rotate 4s linear;
+  animation-delay: -2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.disassemble {
+  animation: move 1s ease-in-out forwards;
+}
+
+@keyframes move {
+  from {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    margin-left: -15px;
+    margin-top: -12px;
+  }
+}
+
+.bg-square {
+  --svg-top: 0;
+  --svg-left: 0;
+  --svg-width: 250px;
+  --svg-height: 250px;
+
+  position: relative;
+  overflow: hidden; /* Oculta el desbordamiento del SVG */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: var(--svg-top);
+    left: var(--svg-left);
+    width: var(--svg-width);
+    height: var(--svg-height);
+    background-image: url("assets/images/square.svg");
+    background-repeat: no-repeat;
+    transition: top 1s ease-in-out, left 1s ease-in-out, width 1s ease-in-out,
+      height 1s ease-in-out;
+  }
+}
+
+app-horizontal-menu {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  // z-index: 100;
+}
+
+.me-appear {
+  position: relative;
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+@keyframes appear {
+  from {
+    left: 10px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+a {
+  position: relative;
+  display: inline-block;
+}
+
+.title-extra[title]:hover::after {
+  font-size: 15px;
+  background-color: #171717;
+  border: #5eead4 solid 1px;
+  border-radius: 0.5rem;
+  padding: 2px 5px;
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: -50%;
+}
+
+.cursive {
+  font-family: "Baumans", cursive;
+}

@@ -1,0 +1,39 @@
+<div class="pb-10">
+  <div class="flex justify-center py-10">
+    <app-title text="My Projects"></app-title>
+  </div>
+
+  <div class="flex flex-wrap gap-10 justify-center p-10">
+    <div
+      class="border-[0.2rem] border-teal-300 rounded-[0.5rem] py-3 px-5 w-[350px]"
+      *ngFor="let project of projects"
+    >
+      <img [src]="project.photoUrl" alt="" width="350" class="rounded" />
+      <div class="pt-5 text-white">
+        <h1 class="text-lg font-bold capitalize">{{ project.title }}</h1>
+        <hr class="border-teal-300 my-2" />
+        <p class="">
+          {{ project.description }}
+        </p>
+      </div>
+      <div class="mt-5 border-t-[0.15rem] border-teal-300 t-5">
+        <div class="flex items-center gap-4">
+          <img
+            *ngFor="let tech of project.technologies"
+            [src]="tech.url"
+            alt="{{ tech.title }}"
+            title="{{ tech.title }}"
+            class="mx-2 w-[25px]"
+          />
+        </div>
+        <div class="mt-5">
+          <button
+            class="text-teal-300 border-[0.2rem] border-teal-300 hover:bg-teal-300 hover:border-neutral-900 hover:text-neutral-900 rounded-[0.3rem] px-2 py-1 transition-all float-right"
+          >
+            <a href="{{ project.pageUrl }}" _target="_blank">Visit</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

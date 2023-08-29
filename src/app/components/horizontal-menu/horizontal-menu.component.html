@@ -1,0 +1,19 @@
+<div class="flex justify-center">
+  <nav
+    class="border-2 border-teal-300 rounded-[0.5rem] px-8 py-2 flex gap-4 justify-center min-w-[350px] text-teal-300 bg-neutral-900 drop-shadow-md"
+  >
+    <a
+      [routerLink]="route.path"
+      class="[&>div]:hover:opacity-100 title-extra"
+      *ngFor="let route of routes"
+      title="{{ route.title }}"
+    >
+      <img src="assets/icons/{{ route.icon }}" class="w-7" alt="" />
+      <div
+        class="mt-1 border rounded border-teal-300 w-30 transition-all {{
+          currentPath == route.path ? 'opacity-100' : 'opacity-0'
+        }}"
+      ></div>
+    </a>
+  </nav>
+</div>

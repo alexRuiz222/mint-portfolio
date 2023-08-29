@@ -1,0 +1,27 @@
+<div class="flex justify-center py-10">
+  <app-title text="Certifications"></app-title>
+</div>
+<div class="flex flex-wrap gap-10 justify-center pt-28">
+  <div
+    class="border-[0.2rem] border-teal-300 rounded-[0.5rem] py-3 px-5 w-[350px]"
+    *ngFor="let certificate of certificates"
+  >
+    <h3 class="text-teal-300 text-xl">{{ certificate.title }}</h3>
+    <h4 class="text-white">{{ certificate.company }}</h4>
+    <div class="text-white">
+      <span>{{ certificate.month }}</span> - <span>{{ certificate.year }}</span>
+    </div>
+    <div class="flex justify-end">
+      <a href="{{ certificate.link }}" target="_blank">
+        <img src="assets/icons/external.svg" alt="" class="w-5 h-5" />
+      </a>
+    </div>
+  </div>
+</div>
+<div>
+  <img
+    src="assets/images/me-certificates.svg"
+    alt=""
+    class="w-full max-w-[200px] me-appear"
+  />
+</div>

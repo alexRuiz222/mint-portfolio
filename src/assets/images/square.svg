@@ -1,0 +1,35 @@
+
+  <svg
+    class=""
+    viewBox="0 0 508 542"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="6"
+      y="45"
+      width="424"
+      height="491"
+      rx="19"
+      stroke="#69E2BE"
+      stroke-width="12"
+    />
+    <rect
+      x="78"
+      y="6"
+      width="424"
+      height="491"
+      rx="19"
+      stroke="#69E2BE"
+      stroke-width="12"
+    />
+    <rect
+      x="41"
+      y="123"
+      width="424"
+      height="335"
+      rx="19"
+      stroke="#69E2BE"
+      stroke-width="12"
+    />
+  </svg>

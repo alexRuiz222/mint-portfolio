@@ -13,38 +13,20 @@
     </div>
     <div class="mb-10">
       <h1 class="text-teal-300 font-bold">Main Stack</h1>
-      <div class="flex justify-start items-center gap-4">
-        <div>
-          <img
-            src="assets/images/tech-logos/mongo.png"
-            alt=""
-            class="w-[25px]"
-            title="MongoDB"
-          />
-        </div>
-        <div>
-          <img
-            src="assets/images/tech-logos/express.png"
-            alt=""
-            class="w-[35px]"
-            title="Express"
-          />
-        </div>
-        <div>
-          <img
-            src="assets/images/tech-logos/angular.png"
-            alt=""
-            class="w-[40px]"
-            title="Angular"
-          />
-        </div>
-        <div>
-          <img
-            src="assets/images/tech-logos/node.png"
-            alt=""
-            class="w-[40px]"
-            title="Node.js"
-          />
+      <div class="flex flex-wrap justify-start items-center gap-4 pt-5">
+        <div *ngFor="let tech of techStack" class="grid logo-tech">
+          <div class="flex justify-center tech-img">
+            <img
+              [src]="tech.url"
+              alt="{{ tech.alt }}"
+              class="{{
+                tech.class
+              }} hover:scale-125 hover:grayscale-0 transition-all grayscale "
+            />
+          </div>
+          <h1 class="opacity-0 pt-5 transition-opacity text-white tech-title">
+            {{ tech.title }}
+          </h1>
         </div>
       </div>
     </div>

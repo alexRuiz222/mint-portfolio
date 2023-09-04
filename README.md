@@ -1,27 +1,27 @@
-# MintPortfolio
+# Portfolio Alex Ruiz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+¡Welcome to my portfolio! Here you will find a collection of all my projects, experiencies and skills like a Frontend developer.
 
-## Development server
+## About me
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+I'm a full stack developer mainly focused in the Frontend development with Angular2+, I like to keep learning about the newest technologies involved in the web development.
 
-## Code scaffolding
+## Featured Projects
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Tesla clone page
 
-## Build
+- This is a simple replica from a cars seller page.
+- Tech stack: HTML, CSS, TAILWIND, JAVASCRIPT, ASTRO.
+- [Demo](https://alexruiz-tesla-clone.netlify.app/) | [Repository](https://github.com/alexRuiz222/landing-tesla-clone)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Portfolio V1
 
-## Running unit tests
+- It's my first portfolio, I made it inspired in Spiderman videogame.
+- Tech stack: HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, ANGULAR.
+- [Demo](https://alexruiz-portfolio.netlify.app/) | [Repository](https://github.com/alexRuiz222/portfolio-alx)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### My weather
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- This is a simple example to test a rest API (Weather API) consume.
+- Tech stack: HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, ANGULAR.
+- [Demo](https://github.com/alexRuiz222/my-weather) | [Repository](https://alexruiz-myweather.netlify.app/)

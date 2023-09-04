@@ -141,3 +141,9 @@ a {
 .cursive {
   font-family: "Baumans", cursive;
 }
+
+.logo-tech {
+  .tech-img:hover + .tech-title {
+    opacity: 1;
+  }
+}

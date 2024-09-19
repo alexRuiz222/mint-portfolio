@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 export class MyJobsComponent {
   myJobs = [
     {
+      company: 'EISEI - Tecnologico de Monterrey',
+      date: '2023/Currently',
+      position: 'Front End Developer',
+      location: 'Monterrey, Nuevo León',
+      remote: true,
+      tools: [ 'Jira', 'Git', 'Microsoft Teams'],
+      stack: ['HTML', 'CSS', 'Tailwind', 'Angular', 'JavaScript', 'Node.js'],
+    },
+    {
       company: 'Advancio',
       date: '2022/2023',
       position: 'Mid Front End Developer',
